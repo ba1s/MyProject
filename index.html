@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>My Project</title>
+    </head>
+    <body>
+        
+        
+    <header>
+        <img class="logo" src="images/bLogo.png">
+            
+            <nav class="links">
+                <a href="#">Home</a>
+                <a href="#members">Members</a>
+                <a href="#images">Images</a>
+                <a href="#videos">videos</a>
+                <a href="#lists">List</a>
+            </nav>
+            <h1>Basil</h1>
+    </header>
+
+    <section class="main" >
+        <div>
+            <h1 id="welcome"></h1>
+            <script>
+                if (new Date().getHours() < 18) {
+                  document.getElementById("welcome").innerHTML = "Good day!";
+                }else{
+                    document.getElementById("welcome").innerHTML = "Good evening!";
+                }
+                </script>
+
+            <h2>Wlecome to my Website</h2>
+            <p>You can sign in here</p>
+        <form class="email">
+            <label for="email">Email</label>
+            
+            <input type="email" name="email" autocomplete="off" placeholder="EX: EMAIL@GMAIL.COM" required>
+            
+            <label for="email">password</label> 
+            
+            <input type="password" name="email" minlength="6" maxlength="20" placeholder="At least 6 character">
+
+            <div class="sure">
+           
+                <input type="submit" value="SIGN IN" onclick="document.getElementById('thank').innerHTML='Thank you for sign in.'" >
+            
+            <input type="reset" >
+           
+            <br>
+            <!--js masegge-->
+            <p id="thank" class="thx"></p>
+            
+            </div>
+        </form>
+        </div>
+    </section> 
+
+    <section class="group" id="members">
+        <div>
+            <h1 id="title">Group Members</h1>
+            <iframe src="Names.html" frameborder="0"></iframe>
+        </div>
+    </section>
+    
+    <section class="image" id="images">
+        <div class="imageA">
+            <iframe id="myframe" src="images.html" frameborder="0"></iframe>
+            <script src="main.js"></script>
+        </div>
+    </section>
+
+    <section class="video" id="videos">
+        <h2 id="title">Video of Nature</h2>
+        <div class="videoA">
+            <iframe src="video.html" frameborder="0"></iframe>
+        </div>
+    </section>
+    
+    <section class="list" id="lists">
+        <iframe id="myframe" src="lists.html" frameborder="0"></iframe>
+    </section>
+
+<section>
+    <footer>
+        <div class="p1">
+        <p>Contact us form:</p>
+        <p>BA190053@GMAIL.COM</p>
+        </div>
+        <div class="p2">
+            <p>Thank you for your visited</p>
+        </div>
+    </footer>
+</section>
+
+    </body>
+</html>
